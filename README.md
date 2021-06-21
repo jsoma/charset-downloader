@@ -1,0 +1,1 @@
+Visit [jsoma.github.io/charset-downloader](https://jsoma.github.io/charset-downloader) to download a randomly selected 8-bit character encoding.

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p {
+                text-align: center;
+                font-size: 2em;
+            }
+        </style>
+        <title>Charset download page</title>
+    </head>
+    <body>
+        <p><a href="#">View your character set sheet</a></p>
+        <script>
+            function shuffle (arr) {
+                var j, x, index;
+                for (index = arr.length - 1; index > 0; index--) {
+                    j = Math.floor(Math.random() * (index + 1));
+                    x = arr[index];
+                    arr[index] = arr[j];
+                    arr[j] = x;
+                }
+                return arr;
+            }
+
+            const filenames = [
+                "extended-ascii-125.pdf",
+                "8859-1.pdf",
+                "8859-11.pdf",
+                "8859-13.pdf",
+                "8859-4.pdf",
+                "extended-ascii-roman.pdf",
+                "8859-5.pdf",
+                "mac-roman.pdf",
+                "windows-1252.pdf",
+            ];
+
+            let selected = shuffle(filenames)[0];
+            document.querySelector('a').setAttribute('href', selected);
+        </script>
+    </body>
+</html>
